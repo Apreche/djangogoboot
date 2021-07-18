@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "djangogoboot"
+version = "1.0.0"
+description = "Get a full Django stack up and running ASAP"
+authors = ["Scott Rubin <apreche@frontrowcrew.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Apreche/djangogoboot/"
+
+[tool.poetry.scripts]
+djangogoboot = "djangogoboot:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Django = "^3.2"
+prompt-toolkit = "^3.0.18"
+GitPython = "^3.1.14"
+cryptography = "^3.4.7"
+requests = "^2.25.1"
+paramiko = "^2.7.2"
+PyGithub = "^1.55"
+Jinja2 = "^3.0.1"
+
+[tool.poetry.dev-dependencies]
+ipython = "^7.22.0"
+ipdb = "^0.13.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
