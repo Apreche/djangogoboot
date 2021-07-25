@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "djangogoboot"
-version = "1.0.0"
+version = "1.0.1"
 description = "Get a full Django stack up and running ASAP"
 authors = ["Scott Rubin <apreche@frontrowcrew.com>"]
 license = "MIT"
