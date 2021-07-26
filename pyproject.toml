@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "djangogoboot"
-version = "1.0.1"
+version = "1.0.2"
 description = "Get a full Django stack up and running ASAP"
 authors = ["Scott Rubin <apreche@frontrowcrew.com>"]
 license = "MIT"
@@ -20,6 +20,7 @@ requests = "^2.25.1"
 paramiko = "^2.7.2"
 PyGithub = "^1.55"
 Jinja2 = "^3.0.1"
+ansible = "^4.3.0"
 
 [tool.poetry.dev-dependencies]
 ipython = "^7.22.0"
