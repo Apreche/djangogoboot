@@ -29,16 +29,16 @@ Before using djangogoboot, the following things must already be setup in advance
 	* The user that this token belongs to will be the account under which the new project will be created.
 
 * Before using Djangogoboot, the production instance on which the Django project will be hosted must already exist.
-	* The instance should be running Ubuntu 20.04 LTS. Other Ubuntu versions or Debian-based Linux distros may work, but are not (yet) officially supported.
-	* There must be a user on the instance that has sudo privileges. This user will be the one that executes the automated deployments.
-	* SSH server must be running on the instance.
-	* There must be an SSH keypair that is *not* encrypted with a passphrase that can be used to connect to the instance as the user with sudo privileges. 
-	* If using a jump host...
-		* It must be possible to connect to the production instance from the jump host via SSH.
-		* If the same keypair can not be used to login to both the jump host and the target host, a username and keypair for each must be provided for both.
-		* A pre-existing known_hosts file must be provided to verify both the jump host and production instance.
-	* The GitHub action runners must be able to reach the instance over the network via SSH, either directly or via a [ProxyJump](https://man.openbsd.org/ssh_config.5#ProxyJump). This usually means it has a public IP address.
-	* There must be a public DNS record pointing at the instance. This is likely to be the domain of your new django project web site.
+		* The instance should be running Ubuntu 20.04 LTS. Other Ubuntu versions or Debian-based Linux distros may work, but are not (yet) officially supported.
+		* There must be a user on the instance that has sudo privileges. This user will be the one that executes the automated deployments.
+		* SSH server must be running on the instance.
+		* There must be an SSH keypair that is *not* encrypted with a passphrase that can be used to connect to the instance as the user with sudo privileges. 
+		* If using a jump host...
+				* It must be possible to connect to the production instance from the jump host via SSH.
+				* If the same keypair can not be used to login to both the jump host and the target host, a username and keypair for each must be provided for both.
+				* A pre-existing known_hosts file must be provided to verify both the jump host and production instance.
+		* The GitHub action runners must be able to reach the instance over the network via SSH, either directly or via a [ProxyJump](https://man.openbsd.org/ssh_config.5#ProxyJump). This usually means it has a public IP address.
+		* There must be a public DNS record pointing at the instance. This is likely to be the domain of your new django project web site.
 
 # Philosophy
 
