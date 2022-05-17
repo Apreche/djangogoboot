@@ -23,7 +23,7 @@ Jinja2 = "^3.0.1"
 ansible = "^4.3.0"
 
 [tool.poetry.dev-dependencies]
-ipython = "^7.22.0"
+ipython = "^7.31.1"
 ipdb = "^0.13.7"
 
 [build-system]
